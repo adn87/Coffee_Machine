@@ -108,6 +108,7 @@ while thirsty:
         print(f"Coffee: {resources["coffee"]}g")
         print(f"money: ${profit}")
     else:
-        if is_resource_sufficient(MENU[answer]["ingredients"]) and is_money_enough(insert_coins(), MENU[answer]["cost"]):
+        if is_resource_sufficient(MENU[answer]["ingredients"]) and is_money_enough(insert_coins(),
+                                                                                   MENU[answer]["cost"]):
             resources_left(answer)
             print(f"Here is your {answer} Enjoy!")
